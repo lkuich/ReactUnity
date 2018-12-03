@@ -13,7 +13,7 @@ Property of [Agents of Discovery](https://agentsofdiscovery.com)
 1. Open your Unity Project
 2. Target .NET 4.X Runtime, set API Compatability level to .NET Standard 2.0
 3. Go the the [Zenject releases](https://github.com/modesttree/Zenject/releases) page, and import the bare Unity Package
-4. Go to the ReactUnity releases page and grab the latest Unity Package
+4. Go to the [ReactUnity releases](https://github.com/lkuich/ReactUnity/releases) page and grab the latest Unity Package
 5. Optionally, install the VS Templates by downloading them from the ReactUnity releases page, and pasting the ZIP files in:
 
 > %USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates\Visual C#\1033
