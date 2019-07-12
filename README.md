@@ -2,11 +2,6 @@
 
 ![React Unity](https://cdn-images-1.medium.com/max/800/1*ib6BiApseraEnwnHttI5Rg.gif)
 
-***
-
-Property of [Agents of Discovery](https://agentsofdiscovery.com)
-
-***
 
 ## Installation
 
