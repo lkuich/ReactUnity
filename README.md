@@ -2,6 +2,13 @@
 
 ![React Unity](https://cdn-images-1.medium.com/max/800/1*ib6BiApseraEnwnHttI5Rg.gif)
 
+ReactUnity is a tiny framework built for internal use to push us into developing more modular Unity applications that are more easily unit tested outside of Unity itself.
+
+At the core of this design is "React". Each component has its own state, and components "react" to the changes in their state. This simple pattern helps us create more contained components and helped us move away from creating more monolithic scripts containing a mixture of business and game logic.
+
+There is no warrenty with this software, it was developed for a specific team and use case.
+
+***
 
 ## Installation
 
@@ -12,14 +19,6 @@
 5. Optionally, install the VS Templates by downloading them from the ReactUnity releases page, and pasting the ZIP files in:
 
 > %USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates\Visual C#\1033
-
-***
-
-## Getting Started
-
-This guide explains the various components of our new React Unity micro-framework. The framework takes hints from React and MVC design patterns, with the goal of creating responsive, modular, and easily testable Unity applications. We plan to phase this into AoD incrementally over time.
-
-At the core of this approach is the Reactive aspect. Each component has its own state, and components "react" to the changes in their state. This saves us time and complexity, and we end up with a less tightly coupled code base, since each component is responsible for itself.
 
 ### Controllers
 
@@ -88,9 +87,7 @@ namespace ReactUnity.Services {
 }
 ```
 
-If you fail to follow this example naming convention, reflection will fail and the service will not be loaded. Be very cautious with this.
-
-It's recommended you use the Unity Service VS Template, it will create the basic structure for your service automatically.
+If you fail to follow this example naming convention, reflection will fail and the service will not be loaded. It's recommended you use the Unity Service VS Template, it will create the basic structure for your service automatically.
 
 ***
 
@@ -100,7 +97,7 @@ It's recommended you use the Unity Service VS Template, it will create the basic
 
 One of our goals for this system is making a large portion of the code base easily unit testable. We want to run tests on UI logic as well as services, independent of the full Unity runtime. A number of decisions were made to support this.
 
-### Avoid MonoBehaviors
+### Avoiding MonoBehaviors
 
 We avoid inheriting from MonoBehaviour in Controllers, Models, and Services. This means that all of these objects can be used outside of the Unity runtime environment. It is especially significant that Controllers aren’t MonoBehaviours as it opens the bulk of UI logic to unit testing.
 
