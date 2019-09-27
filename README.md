@@ -4,7 +4,7 @@
 
 ReactUnity is a tiny framework built for internal use to push us into developing more modular Unity applications that are more easily unit tested outside of Unity itself.
 
-At the core of this design is "React". Each component has its own state, and components "react" to the changes in their state. This simple pattern helps us create more contained components and helped us move away from creating more monolithic scripts containing a mixture of business and game logic.
+The design borrows from MVCS and React concepts. Each component has its own state, and components "react" to the changes in their state. Models, Presenters, Controllers, and Services are broken up. This simple pattern helps us create more contained components and helped us move away from creating more monolithic scripts containing a mixture of business and game logic.
 
 There is no warrenty with this software, it was developed for a specific team and use case.
 
